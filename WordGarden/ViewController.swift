@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     func updateUIAfterGuess() {
         guessedLetterTextField.resignFirstResponder()
         guessedLetterTextField.text! = ""
+        guessLetterButton.isEnabled = false
     }
     
     @IBAction func guessedLetterFieldChanged(_ sender: UITextField) {
